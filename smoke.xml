@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="testParam" value="Initial Test Value"></parameter>
+    <listeners>
+        <!--        <listener class-name="com.acudemy.apiautomation.listener.RetryAnalyzer"></listener>-->
+        <listener class-name="com.acudemy.apiautomation.listener.AnnotationTransform"></listener>
+    </listeners>
+    <test name="C:/PracticeLearning/RestAssued_AC">
+        <classes>
+            <class name="com.acudemy.apiautomation.tests.GetBookingApiTests">
+            </class>
+
+        </classes>
+    </test>
+</suite>
