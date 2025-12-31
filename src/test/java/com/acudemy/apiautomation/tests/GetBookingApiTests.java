@@ -53,7 +53,7 @@ public class GetBookingApiTests {
                   .and().with().timeout(Duration.ofSeconds(5))
                   .then().untilAsserted(()->assertThat(getBookingApi.getBookingById(bookingId)
                                                                     .statusCode())
-                          .isEqualTo(201));
+                          .isEqualTo(200));
 
 
 //        assertThat(response.statusCode())

@@ -39,7 +39,7 @@ public class DeleteBookingApiTests {
         deleteBookingApi.deleteBooking(JsonPath.read(response.asString(),"$.bookingid"))
                 .then()
                 .assertThat()
-                .statusCode(200);
+                .statusCode(201);
 
     }
 
